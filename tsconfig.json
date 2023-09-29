@@ -1,0 +1,24 @@
+{
+  "include": ["src/**/*.ts", "examples/**/*.ts"],
+  "compilerOptions": {
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+    "types": ["node", "jest"],
+    "module": "CommonJS",
+    "strict": true,
+    "outDir": "dist",
+    "allowJs": false,
+    "noErrorTruncation": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "sourceMap": false,
+    "declaration": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["src", "node_modules/@types"]
+  },
+  "typeAcquisition": { "include": ["jest"] }
+}
