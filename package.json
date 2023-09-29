@@ -1,6 +1,6 @@
 {
   "name": "@xorgal/logger",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A basic logger for JavaScript applications, providing timestamps and log level visibility",
   "main": "./dist/Logger.js",
   "types": "./dist/Logger.d.ts",
@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "rm -rf ./dist && tsc --build tsconfig.build.json",
+    "release": "pnpm build && pnpm publish",
     "check": "prettier --check src**/*.ts && eslint src/**/*.ts && tsc -p tsconfig.build.json --noEmit",
     "lint": "prettier --write src/**/*.ts && eslint src/**/*.ts --fix",
     "test": "jest"
