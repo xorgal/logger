@@ -1,6 +1,6 @@
 {
   "name": "@xorgal/logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A basic logger for JavaScript applications, providing timestamps and log level visibility",
   "main": "./dist/Logger.js",
   "types": "./dist/Logger.d.ts",
