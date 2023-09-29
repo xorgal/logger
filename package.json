@@ -13,7 +13,18 @@
     "lint": "prettier --write src/**/*.ts && eslint src/**/*.ts --fix",
     "test": "jest"
   },
-  "keywords": [],
+  "keywords": [
+    "logger",
+    "log",
+    "logging",
+    "info",
+    "debug",
+    "warn",
+    "error",
+    "timestamp",
+    "log level",
+    "typescript"
+  ],
   "author": {
     "name": "xorgal",
     "email": "93151521+xorgal@users.noreply.github.com",
