@@ -1,4 +1,4 @@
-import { Logger, LogLevel } from '..';
+import { Logger, LogLevel } from '../Logger';
 
 describe('Logger', () => {
   let mockConsoleDebug: jest.SpyInstance;
