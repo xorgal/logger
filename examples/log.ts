@@ -1,4 +1,4 @@
-import { Logger } from '../src';
+import { Logger } from '../src/Logger';
 
 let log = new Logger({});
 log.info('This is log message.');
