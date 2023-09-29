@@ -45,14 +45,23 @@ const log = new Logger({ level: LogLevel.info });
 log.info('Hello, Logger!');
 ```
 
-Add timestamps:
+Configuration:
 
 ```javascript
-const log = new Logger({ level: LogLevel.debug, timestamp: true, includeLevel: true });
-log.debug('This is debug message with timestamp and log level.');
+const isDevelopment = process.env.NODE_ENV === 'development' ? true : false;
+
+const log = new Logger({
+  timestamp: true,
+  level: isDevelopment ? LogLevel.debug : LogLevel.info,
+  includeLevel: true,
+  colorize: true,
+  align: true,
+});
+
+log.debug('This is debug message.');
 
 // Output:
-// 2023-09-29T10:57:24.803Z [debug] This is debug message with timestamp and log level.
+// 2023-09-29T10:57:24.803Z [debug] This is debug message.
 ```
 
 Log levels:
@@ -63,18 +72,6 @@ enum LogLevel {
     info = 1,
     warn = 2,
     error = 3
-}
-```
-
-Optional settings:
-
-```typescript
-interface ILoggerSettingsParams {
-  level?: LogLevel; // Set minimum log level
-  timestamp?: boolean; // Prefix log messages with timestamp
-  includeLevel?: boolean; // Print log level
-  align?: boolean; // Align all messages
-  colorize?: boolean; // Use colors
 }
 ```
 
