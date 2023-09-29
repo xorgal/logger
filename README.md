@@ -1,6 +1,6 @@
 # Logger
 
-XLog is a simple and flexible, customizable logging utility for JavaScript applications.
+Logger is a simple and flexible, customizable logging utility for JavaScript applications.
 
 ## Features
 
